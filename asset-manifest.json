@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2184c0b9.css",
+    "main.css": "/react-gh-pages/static/css/main.497ef73d.css",
     "main.js": "/react-gh-pages/static/js/main.f3a8a0c8.js",
     "static/media/teacup.png": "/react-gh-pages/static/media/teacup.59c8d43c3066658af582.png",
     "static/media/anatole.jpg": "/react-gh-pages/static/media/anatole.ed0093e0fa702fe5d43e.jpg",
@@ -13,11 +13,11 @@
     "static/media/fnr_logo.gif": "/react-gh-pages/static/media/fnr_logo.88e313982e2fbd6dc317.gif",
     "static/media/igor.jpeg": "/react-gh-pages/static/media/igor.5f57e992db51ceb9c18f.jpeg",
     "index.html": "/react-gh-pages/index.html",
-    "main.2184c0b9.css.map": "/react-gh-pages/static/css/main.2184c0b9.css.map",
+    "main.497ef73d.css.map": "/react-gh-pages/static/css/main.497ef73d.css.map",
     "main.f3a8a0c8.js.map": "/react-gh-pages/static/js/main.f3a8a0c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.2184c0b9.css",
+    "static/css/main.497ef73d.css",
     "static/js/main.f3a8a0c8.js"
   ]
 }

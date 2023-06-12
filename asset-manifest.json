@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.70151392.css",
-    "main.js": "/static/js/main.96f7e5cd.js",
-    "static/media/teacup.png": "/static/media/teacup.59c8d43c3066658af582.png",
-    "static/media/anatole.jpg": "/static/media/anatole.ed0093e0fa702fe5d43e.jpg",
-    "static/media/AlexT.png": "/static/media/AlexT.3d92525b548717146eb9.png",
-    "static/media/klaus3.png": "/static/media/klaus3.3b4cdd6e5a39e1fb383e.png",
-    "static/media/uni.jpeg": "/static/media/uni.df9203bbbe9d145c2222.jpeg",
-    "static/media/KH.jpeg": "/static/media/KH.4fe2cdad75ab29e75e94.jpeg",
-    "static/media/logo_uni.jpg": "/static/media/logo_uni.9eb36617afc598eb595e.jpg",
-    "static/media/mirela.jpeg": "/static/media/mirela.3de5632bfca10172399e.jpeg",
-    "static/media/fnr_logo.gif": "/static/media/fnr_logo.88e313982e2fbd6dc317.gif",
-    "static/media/igor.jpeg": "/static/media/igor.5f57e992db51ceb9c18f.jpeg",
-    "index.html": "/index.html",
-    "main.70151392.css.map": "/static/css/main.70151392.css.map",
-    "main.96f7e5cd.js.map": "/static/js/main.96f7e5cd.js.map"
+    "main.css": "/react-gh-pages/static/css/main.497ef73d.css",
+    "main.js": "/react-gh-pages/static/js/main.39a12fe5.js",
+    "static/media/teacup.png": "/react-gh-pages/static/media/teacup.59c8d43c3066658af582.png",
+    "static/media/anatole.jpg": "/react-gh-pages/static/media/anatole.ed0093e0fa702fe5d43e.jpg",
+    "static/media/AlexT.png": "/react-gh-pages/static/media/AlexT.3d92525b548717146eb9.png",
+    "static/media/klaus3.png": "/react-gh-pages/static/media/klaus3.3b4cdd6e5a39e1fb383e.png",
+    "static/media/uni.jpeg": "/react-gh-pages/static/media/uni.df9203bbbe9d145c2222.jpeg",
+    "static/media/KH.jpeg": "/react-gh-pages/static/media/KH.4fe2cdad75ab29e75e94.jpeg",
+    "static/media/logo_uni.jpg": "/react-gh-pages/static/media/logo_uni.9eb36617afc598eb595e.jpg",
+    "static/media/mirela.jpeg": "/react-gh-pages/static/media/mirela.3de5632bfca10172399e.jpeg",
+    "static/media/fnr_logo.gif": "/react-gh-pages/static/media/fnr_logo.88e313982e2fbd6dc317.gif",
+    "static/media/igor.jpeg": "/react-gh-pages/static/media/igor.5f57e992db51ceb9c18f.jpeg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.497ef73d.css.map": "/react-gh-pages/static/css/main.497ef73d.css.map",
+    "main.39a12fe5.js.map": "/react-gh-pages/static/js/main.39a12fe5.js.map"
   },
   "entrypoints": [
-    "static/css/main.70151392.css",
-    "static/js/main.96f7e5cd.js"
+    "static/css/main.497ef73d.css",
+    "static/js/main.39a12fe5.js"
   ]
 }

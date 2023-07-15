@@ -1,80 +1,76 @@
-import "../App.css"
-import React, { useRef, useState } from 'react'
-import db from '../participants'
-import Data from "./data"
+import "../App.css";
+import React, { useRef, useState } from 'react';
+import { BrowserRouter as Routes, Route, useNavigate } from 'react-router-dom';
+import db from '../participants';
+import DropboxGUI from "./dropbox_gui";
 
-function Login() {
-    // this is the list of participants
+function Login({ setLoggedIn }) {
     const [participants, setParticipants] = useState(db);
-    
-    // error messages
-    const errors = {
-        ID: "ID not found in the DB",
-        password: "Invalid password"
-    }
-
-    // error and success messages
     const [errorMessage, setErrorMessage] = useState({});
     const [submitted, setSubmitted] = useState(false);
 
-    // Error message renderer
+    const errors = {
+        ID: "ID not found in the DB",
+        password: "Invalid password"
+    };
+
     const renderError = (name) =>
         name === errorMessage.name && (
             <div className="error">{errorMessage.message}</div>
-        )
+        );
 
-    // Login form
+    const navigate = useNavigate();
+    const submission = (e) => {
+        e.preventDefault();
+        
+        const { ID, password } = e.target.elements;
+        const loginInfo = participants.find((user) => user.ID === ID.value);
+
+        if (loginInfo) {
+            if (loginInfo.password !== password.value) {
+                setErrorMessage({ name: "password", message: errors.password });
+                setSubmitted(false);
+            } else {
+                setSubmitted(true);
+            }
+            setLoggedIn(true); // Set login status to true on successful login
+            navigate("/data_page");
+        } else {
+            setErrorMessage({ name: "ID", message: errors.ID });
+            setSubmitted(false);
+        }
+
+        e.target.reset();
+    };
+
     const loginForm = (
         <div className="form">
-            <form onSubmit={submitted}>
+            <form onSubmit={submission}>
                 <div className="input-container">
                     <label>Access ID : </label>
-                    <input type="text" name="ID" required></input>
+                    <input type="text" name="ID" required />
                     {renderError("ID")}
                 </div>
                 <div className="input-container">
                     <label>Password : </label>
-                    <input type="password" name="password" required></input>
+                    <input type="password" name="password" required />
                     {renderError("password")}
                 </div>
                 <div className="button-container">
-                    <input type="submit"></input>
+                    <input type="submit" />
                 </div>
             </form>
         </div>
     );
 
-    const submission = (e) => {
-        // prevent rendering
-        e.preventDefault();
-        
-        var { ID, password } = document.forms[0];
-        const loginInfo = participants.find((user) => user.ID === ID.value());
-        if (loginInfo) {
-            if (loginInfo.password !== password.value){
-                setErrorMessage({ name: "password", message: errors.pass });
-            } else {
-                setSubmitted(true);
-            }
-            setSubmitted(false);
-        } else{
-            setErrorMessage({ name: "ID", message: errors.ID })
-            setSubmitted(false)
-        }
-
-        e.reset();
-
-        return submitted
-    }
-
-    // TODO!: need to change this so that the redirection will work
     return (
         <div className="app">
-          <div className="login-form">
-            <h2>Login to access the database</h2>
-            {submitted ? <div>Login successful</div> : loginForm}
-          </div>
+            <div className="login-form">
+                <h2>Login to access the database</h2>
+                {submitted ? <div>Login successful</div> : loginForm}
+            </div>
         </div>
-      );
+    );
 }
+
 export default Login;

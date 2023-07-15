@@ -18,11 +18,14 @@ import Banana_man from './assets/gabor3.jpeg'
 import Banana_Man3 from './assets/klaus3.png'
 import Jorg from './assets/jorg.jpeg'
 import AlexT from './assets/AlexT.png'
+import DropboxGUI from './pages/dropbox_gui';
+import { useState } from 'react';
 /*import Map from './Map';*/
 
 
 function App() {
   let navigate = useNavigate();
+  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div className="App">
@@ -134,9 +137,14 @@ function App() {
         <Route path="/details" element={<Details />}></Route>
         <Route path="/logistics" element={<Logistics />}></Route>
         <Route path="/participants" element={<Participants />}></Route>
-        <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/contact_us" element={<Contacts />}></Route>
+        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
+          {loggedIn ? (
+            <Route path="/data_page" element={<DropboxGUI />} />
+          ) : (
+            <Route path="/data_page" element={<div>You need to be logged in to access this page.</div>} />
+          )}
       </Routes>
 
       

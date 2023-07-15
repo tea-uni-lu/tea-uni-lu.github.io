@@ -48,7 +48,7 @@ function Contacts() {
                 <td className='table_details'>Workshop organiser</td>
                 <td className='table_details'>Organisational support </td>
                 <td className='table_details'>Technical support</td>
-                <td className='table_details'>Head of Theoretical <br/> Chemical Physics group</td>
+                <td className='table_details'>Workshop organiser</td>
               </tr>
               <tr className='table_details'>
                 <td className='table_details'>Igor Poltavskyi</td>

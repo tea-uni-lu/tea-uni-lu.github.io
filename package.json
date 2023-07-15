@@ -1,7 +1,7 @@
 {
   "name": "conference_template",
   "version": "0.1.0",
-  "homepage": "https://tea-uni-lu.github.io/react-gh-pages",
+  "homepage": "https://tea-uni-lu.github.io/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -14,12 +14,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "dropbox": "^10.34.0",
     "google-map-react": "^2.2.0",
     "mdb-react-ui-kit": "^6.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.3",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-icons": "^4.10.1",
     "react-redux": "^8.0.5",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
@@ -30,8 +32,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -57,6 +59,8 @@
     "@iconify/icons-mdi": "^1.2.44",
     "@iconify/react": "^4.1.0",
     "gh-pages": "^5.0.0",
-    "react-table": "^7.8.0"
+    "react-app-rewired": "^2.2.1",
+    "react-table": "^7.8.0",
+    "webpack-node-externals": "^3.0.0"
   }
 }

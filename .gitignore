@@ -1,0 +1,15 @@
+# binaries
+bin/
+dist/
+lib/
+
+# editors
+*.swp
+.idea/
+.vs
+.vscode/
+.DS_Store
+
+# some large folders
+/node_modules
+/node_modules/

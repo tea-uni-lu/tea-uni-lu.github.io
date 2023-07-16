@@ -17,7 +17,10 @@ function DropboxData() {
         <DropboxChooser appKey={CLIENT_ID}
           success={handleSuccess}
           cancel={()=> console.log("closed")}
+          linkType="direct"
+          extensions={['.pdf', '.doc', '.docx', '.txt', '.md']}
           multiselect={true}
+          folderPath={FOLDER_PATH}
         >
         </DropboxChooser>
       </div>

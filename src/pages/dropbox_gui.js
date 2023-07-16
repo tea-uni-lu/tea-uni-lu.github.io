@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Dropbox } from 'dropbox';
 import { RiDownloadCloudLine, RiUploadCloudLine } from 'react-icons/ri';
 
-const CLIENT_ID = 'osgnwmxhl49u6t2';
-const CLIENT_SECRET = 'buqex2q6bgvhqbs';
-const ACCESS_TOKEN = 'sl.BiSYYASM9oF_D46TPUnSTNiGr08ioyLQHWvNl_w-8kX60Revy-06e0gy75OgaghoUwyux3lCvkVoLvnwaWW9u3jF2NKUh5YFG8vzhjTDkCiQjebAUbECoG3PFdRLcBLAHl89GmBL';
+const CLIENT_ID = 'c0mpqunklb6vt5s';
+const CLIENT_SECRET = 'bfyvai1f20zz5ry';
+const REDIRECT_URI = 'localhost:3000/data_page';
+const ACCESS_TOKEN = 'sl.BiSW_RjCv_OJWxhCQX2HXmNqFfdvzV1UD13JompK5Z2hJ4RlVD4nSqykul2OOCFvDLPELARggufWC7Vl3AS5eAV1bHscrxzbd5_bdicAI_Jl-pdJZYX11KQ7sPjKHvW2b0wFHr0';
 const FOLDER_PATH = '/TEA2023/TEST/'
 
 const dropbox = new Dropbox({ clientId: CLIENT_ID, clientSecret: CLIENT_SECRET, accessToken: ACCESS_TOKEN});

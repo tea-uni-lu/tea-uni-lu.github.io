@@ -1,10 +1,29 @@
 let db = [
     {
+        name: "Mirela Puleva",
+        ID  : "m.puleva",
+        password: "lux.402"
+    },
+    {
+        name: "Kyunghoon Han",
+        ID : "k.han",
+        password: "god_of_this_world"
+    },
+    {
+        name: "Igor Poltavskyi",
+        ID : "i.pol",
+        password: "lux.911"
+    },
+    {
+        name : "Alexandre Tkatchenko",
+        ID : "a.tkatchenko",
+        password : "lux.591"
+    },
+    {
         name: "Gábor Csányi",
         ID: "g.csanyi",
         password: "cam.905"
     },
-
     {
         name: "Jörg Behler",
         ID: "j.behler",

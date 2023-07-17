@@ -4,7 +4,7 @@ import { BrowserRouter as Routes, Route, useNavigate } from 'react-router-dom';
 import db from '../participants';
 import DropboxGUI from "./dropbox_gui";
 
-function Login({ setLoggedIn }) {
+function Login({ setLoggedIn, setID }) {
     const [participants, setParticipants] = useState(db);
     const [errorMessage, setErrorMessage] = useState({});
     const [submitted, setSubmitted] = useState(false);
@@ -31,6 +31,7 @@ function Login({ setLoggedIn }) {
                 setErrorMessage({ name: "password", message: errors.password });
                 setSubmitted(false);
             } else {
+                setID(loginInfo.ID);
                 setSubmitted(true);
             }
             setLoggedIn(true); // Set login status to true on successful login

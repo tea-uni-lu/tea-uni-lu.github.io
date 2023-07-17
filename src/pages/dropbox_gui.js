@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import DropboxChooser from 'react-dropbox-chooser';
 
-const FOLDER_PATH = '/TEA2023/TEST/';
+const FOLDER_PATH = '/TEA2023/';
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
 
-function DropboxData() {
+function DropboxData({ ID }) {
   function handleSuccess (files){
     console.log(files);
   }
@@ -18,7 +18,7 @@ function DropboxData() {
           success={handleSuccess}
           cancel={()=> console.log("closed")}
           linkType="direct"
-          extensions={['.pdf', '.doc', '.docx', '.txt', '.md']}
+          extensions={['.pdf', '.ppt', '.traj', '.png', '.jpeg', '.doc', '.docx', '.db', '.txt', '.md']}
           multiselect={true}
           folderPath={FOLDER_PATH}
         >

@@ -26,6 +26,7 @@ import { useState } from 'react';
 function App() {
   let navigate = useNavigate();
   const [loggedIn, setLoggedIn] = useState(false);
+  const [ID, setID] = useState("");
 
   return (
     <div className="App">
@@ -139,9 +140,9 @@ function App() {
         <Route path="/participants" element={<Participants />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/contact_us" element={<Contacts />}></Route>
-        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
+        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} setID={setID}/>} />
           {loggedIn ? (
-            <Route path="/data_page" element={<DropboxGUI />} />
+            <Route path="/data_page" element={<DropboxGUI ID={ID}/>} />
           ) : (
             <Route path="/data_page" element={<div>You need to be logged in to access this page.</div>} />
           )}

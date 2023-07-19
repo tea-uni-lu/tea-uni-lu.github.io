@@ -24,6 +24,7 @@ function DropboxData({ ID }) {
         >
         </DropboxChooser>
       </div>
+            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="c0mpqunklb6vt5s"></script>
     </div>
   )
 }

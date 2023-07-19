@@ -1,3 +1,4 @@
+import { Dropbox } from 'dropbox';
 import React, { useState } from 'react';
 import DropboxChooser from 'react-dropbox-chooser';
 
@@ -5,8 +6,22 @@ const FOLDER_PATH = '/TEA2023/';
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
 
 function DropboxData({ ID }) {
+  const [files, setFiles] = useState([]);
+
   function handleSuccess (files){
     console.log(files);
+  }
+
+  function handleDownload (file) {
+    const drops = new Dropbox.Dropbox({ accessToken : process.env.CLIENT_ID});
+    drops.filesGetTemporaryLink({ path : file.path_display})
+      .then(response => {
+        const download_url = response.link;
+        window.open(download_url);
+      })
+      .catch(error => {
+        console.error("Ha! Ha! Download failed! Ha! Ha!", error);
+      });
   }
 
   return (
@@ -24,7 +39,12 @@ function DropboxData({ ID }) {
         >
         </DropboxChooser>
       </div>
-            <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="c0mpqunklb6vt5s"></script>
+      {files.map(file => (
+        <div key={file.id}>
+          <span>{file.name}</span>
+          <button onClick={() => handleDownload(file)}>DOWNLOAD!</button>
+          </div>
+      ))}
     </div>
   )
 }

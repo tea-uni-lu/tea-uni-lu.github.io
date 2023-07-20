@@ -19,6 +19,19 @@ let db = [
         ID : "a.tkatchenko",
         password : "lux.591"
     },
+
+    {
+        name: "Kristof T. Schütt",
+        ID: "k.t.shutt",
+        password: "berlin.437"
+    },
+
+    {
+        name: "Boris Kozinsky",
+        ID: "b.kozinsky",
+        password: "harvard.437"
+    },
+
     {
         name: "Gábor Csányi",
         ID: "g.csanyi",
@@ -43,12 +56,6 @@ let db = [
     },
 
     {
-        name: "Matthias Rupp",
-        ID: "m.rupp",
-        password: "list.162"
-    },
-
-    {
         name: "O. Anatole von Lilienfeld",
         ID: "o.a.lilienfeld",
         password: "toronto.829"
@@ -63,6 +70,18 @@ let db = [
         name: "Ilyes Batatia",
         ID: "i.batatia",
         password: "cam.335"
+    },
+
+    {
+        name: "Olexandr Isayev",
+        ID: "o.isayev",
+        password: "pittsburgh.190"
+    },
+
+    {
+        name: "Simon Batzner",
+        ID: "s.batzner",
+        password: "san.francisco.247"
     },
 
     {

@@ -10,6 +10,9 @@ lib/
 .vscode/
 .DS_Store
 
+participants.js
+src/participants.js
+
 # some large folders
 /node_modules
 /node_modules/

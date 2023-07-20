@@ -33,25 +33,9 @@ function DropboxData({ ID }) {
     <div className="app">
       <h3 style={{textAlign:"center"}}>Welcome to the Tea2023 data sharing platform</h3>
       <br/> <br/>
-      <div>
-        <button onClick={openDropboxChooser}>Click here to access the Dropbox databse</button>
-        <DropboxChooser 
-          ref={dropboxChooserRef}
-          appKey={process.env.REACT_APP_CLIENT_ID}
-          success={handleSuccess}
-          cancel={()=> console.log("closed")}
-          linkType="direct"
-          multiselect={true}
-          folderPath={FOLDER_PATH}
-        >
-        </DropboxChooser>
-      </div>
-      {files.map(file => (
-        <div key={file.id}>
-          <span>{file.name}</span>
-          <button onClick={() => handleDownload(file)}>DOWNLOAD!</button>
-          </div>
-      ))}
+      <a href="https://www.dropbox.com/scl/fo/7p4jdakp5fwj0l2lr4rjk/h?rlkey=lf8gb2okieflvu3xo2w62ufrw&dl=0" target='blank' rel='noopener noreferrer'>
+        <button style={{ color: "#3f51b5"}}>Click here to access the Dropbox folder</button>
+      </a>        
     </div>
   )
 }

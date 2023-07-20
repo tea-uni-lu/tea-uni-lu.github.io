@@ -22,7 +22,7 @@ let db = [
 
     {
         name: "Kristof T. Schütt",
-        ID: "k.t.shutt",
+        ID: "k.t.schutt",
         password: "berlin.437"
     },
 

@@ -1,6 +1,7 @@
 import "../App.css";
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router";
 
 
 function Register(){
@@ -26,6 +27,8 @@ function Register(){
 	const [isPasswordConfirm, setIsPasswordConfirm] = React.useState(false);
 	const [isEmail, setIsEmail] = React.useState(false);
 
+	// 
+	const navigate = useNavigate();
 	// send the e-mail to the developer regarding the permission to register
 	const form = useRef()
 	const sendEmail = (e) => {
@@ -36,11 +39,15 @@ function Register(){
 			form.current,
 			process.env.REACT_APP_USER_ID
 		).then(
-			result => console.log(result.text),
-			error => console.log(error.text)
+			(result) => {
+			  console.log(result.text);
+			  form.current.reset(); // Use form.current.reset() to reset the form
+			  navigate("/thankyou");
+			},
+			(error) => {
+			  console.log(error.text);
+			}
 		);
-
-		e.target.reset();
 	}
 
 	const onChangeFirstName = (e) =>{
@@ -122,6 +129,7 @@ function Register(){
 		<div>
 
 		<h2>Register</h2>
+		<form ref={form}>
 		<div className="form">
 			<div className="form-el">
 				<label htmlFor="id">ID</label> <br/>
@@ -153,7 +161,7 @@ function Register(){
 			<div className="form-el">
 				<label htmlFor="affiliation">Affiliation</label> <br/>
 				<input id="affiliation"
-					   name="affilation"
+					   name="affiliation"
 					   value={affiliation}
 					   placeholder="Affiliation"
 					   onChange={onChangeAffiliation} />
@@ -183,16 +191,17 @@ function Register(){
          <label htmlFor="email">Email</label> <br />
          <input
            id="email"
-           name="name"
+           name="email"
            value={email}
            onChange={onChangeEmail}
          />
          <p className="message">{emailMessage}</p>
        </div>
 	   <button type="submit"
-	   		   onClick={emailSender}>
+	   		   onClick={(e)=>sendEmail(e)}>
 			Submit
 		</button>
+		</form>
 	</div>
 	)
 }

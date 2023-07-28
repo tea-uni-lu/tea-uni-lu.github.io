@@ -20,6 +20,7 @@ import Jorg from './assets/jorg.jpeg'
 import AlexT from './assets/AlexT.png'
 import DropboxGUI from './pages/dropbox_gui';
 import { useState } from 'react';
+import ThankYou from './pages/thanks';
 /*import Map from './Map';*/
 
 
@@ -146,6 +147,7 @@ function App() {
           ) : (
             <Route path="/data_page" element={<div>You need to be logged in to access this page.</div>} />
           )}
+          <Route path="/thankyou" element={<ThankYou />}></Route>
       </Routes>
 
       

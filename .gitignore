@@ -14,5 +14,5 @@ participants.js
 src/participants.js
 
 # some large folders
-/node_modules
-/node_modules/
+node_modules
+node_modules/

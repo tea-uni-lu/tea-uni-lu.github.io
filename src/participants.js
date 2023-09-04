@@ -123,7 +123,20 @@ let db = [
         name: "Hassan Ouhbi",
         ID: "hassan.ouhbi",
         password: "H@ss@n89"
-    }
+    },
+
+    {
+        name: "Stefan Heinen",
+        ID: "heini",
+        password: "1.1-bsdppf"
+    },
+
+    {
+        name: "Alastair Prince",
+        ID: "a.prince",
+        password: "800127828"
+    }
+
 
 ];
 

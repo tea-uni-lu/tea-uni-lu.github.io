@@ -42,25 +42,21 @@ let db = [
         ID: "j.behler",
         password: "ruhr.877"
     },
-
     {
         name: "Klaus-Robert Müller",
         ID: "k-r.muller",
         password: "berlin.836"
     },
-
     {
         name: "Matthias Rupp",
         ID: "m.rupp",
         password: "list.868"
     },
-
     {
         name: "O. Anatole von Lilienfeld",
         ID: "o.a.lilienfeld",
         password: "toronto.829"
     },
-
     {
         name: "Markus Meuwly",
         ID: "m.meuwly",

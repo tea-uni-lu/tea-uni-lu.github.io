@@ -20,29 +20,32 @@ function Login({ setLoggedIn, setID }) {
         );
 
     const navigate = useNavigate();
+
     const submission = (e) => {
         e.preventDefault();
         
         const { ID, password } = e.target.elements;
         const loginInfo = participants.find((user) => user.ID === ID.value);
-
+    
         if (loginInfo) {
             if (loginInfo.password !== password.value) {
                 setErrorMessage({ name: "password", message: errors.password });
                 setSubmitted(false);
+                return; // Exit the function if the password is incorrect
             } else {
                 setID(loginInfo.ID);
+                setLoggedIn(true); // Set login status to true on successful login
                 setSubmitted(true);
+                navigate("/data_page");
             }
-            setLoggedIn(true); // Set login status to true on successful login
-            navigate("/data_page");
         } else {
             setErrorMessage({ name: "ID", message: errors.ID });
             setSubmitted(false);
         }
-
+    
         e.target.reset();
     };
+    
 
     const loginForm = (
         <div className="form">

@@ -52,64 +52,33 @@ function People() {
 
   const data = React.useMemo(
     () => [
-
-      {
-        col1: 'Ilyes Batatia',
-        col2: 'University of Cambridge',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
-
-      {
-        col1: 'Jörg Behler',
-        col2: 'Ruhr University Bochum',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
       {
         col1: 'Gábor Csányi',
         col2: 'University of Cambridge',
         col3: 'TBD',
         col4: 'TBD',
       },
+      
       {
-        col1: 'Felix Andreas Faber',
-        col2: 'University of Cambridge',
+        col1: 'Klaus-Robert Müller',
+        col2: 'Technische Universität Berlin',
         col3: 'TBD',
         col4: 'TBD',
       },
+      
       {
-        col1: 'Gianni De Fabritiis',
-        col2: 'Pompeu Fabra University of Barcelona',
+        col1: 'Matthias Rupp',
+        col2: ' Luxembourg Institute of Science and Technology',
         col3: 'TBD',
         col4: 'TBD',
       },
-      {
-        col1: 'Thorben Frank',
-        col2: 'TU Berlin',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
-      {
-        col1: 'Tsz Wai Ko',
-        col2: 'University of San Diego',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
+
       {
         col1: 'O. Anatole von Lilienfeld',
         col2: 'University of Toronto',
         col3: 'TBD',
         col4: 'TBD',
       },
-      
-      {
-        col1: 'Johannes Margraf',
-        col2: 'Fritz Haber Institute',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
-      
 
       {
         col1: 'Markus Meuwly',
@@ -117,24 +86,86 @@ function People() {
         col3: 'TBD',
         col4: 'TBD',
       },
-
+      
       {
-        col1: 'Klaus-Robert Müller',
-        col2: 'TU Berlin',
+        col1: 'Gianni De Fabritiis',
+        col2: 'Pompeu Fabra University of Barcelona',
         col3: 'TBD',
         col4: 'TBD',
       },
 
+      {
+        col1: 'Thorben Frank',
+        col2: 'Technische Universität Berlin',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Tsz Wai Ko',
+        col2: 'University of California, San Diego',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Johannes Margraf',
+        col2: 'Fritz Haber Institute',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Bing Huang',
+        col2: 'University of Vienna',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Ilyes Batatia',
+        col2: 'University of Cambridge',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      
+      {
+        col1: 'Stefan Heinen',
+        col2: 'University of Toronto',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Danish Khan',
+        col2: 'University of Toronto',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+      {
+        col1: 'Jan Weinreich',
+        col2: 'École Polytechnique Fédérale de Lausanne',
+        col3: 'TBD',
+        col4: 'TBD',
+      },      
+
+
+      {
+        col1: 'Alistair Price',
+        col2: 'University of Toronto',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
+
+      {
+        col1: 'Hassan Ouhbi',
+        col2: 'Luxembourg Institute of Science and Technology',
+        col3: 'TBD',
+        col4: 'TBD',
+      },
       {
         col1: 'Igor Poltavskyi',
         col2: 'University of Luxembourg',
-        col3: 'TBD',
-        col4: 'TBD',
-      },
-
-      {
-        col1: 'Matthias Rupp',
-        col2: ' Luxembourg Institute of Science and Technology',
         col3: 'TBD',
         col4: 'TBD',
       },
@@ -145,6 +176,7 @@ function People() {
         col3: 'TBD',
         col4: 'TBD',
       }
+
     ],
     []
   )

@@ -149,6 +149,12 @@ let db = [
         ID: "danishk",
         password: "rosebud@23"
     },
+
+    {
+        name: "Jan Weinreich",
+        ID: "janwein",
+        password: "tomaten@312"
+    },
 ];
 
 export default db;

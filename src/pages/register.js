@@ -129,6 +129,7 @@ function Register(){
 		<div>
 
 		<h2>Register</h2>
+		<h2>REGISTRATION IS NOW CLOSED</h2>
 		<form ref={form}>
 		<div className="form">
 			<div className="form-el">

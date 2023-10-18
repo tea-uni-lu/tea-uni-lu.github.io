@@ -1,12 +1,13 @@
 import { Table } from "react-bootstrap";
 import '../App.css';
+import table_sch from '../assets/table_sch.png'
 
 function Details() {
     return (
         <div>
             <h2 className="marginer">Programme and information</h2>
             <p style={{fontSize: "18px"}}></p>
-            Details on the conference program will be communicated in due time.
+              <img style={{ width: 1000, height: null}} src={table_sch}/>
             <p style={{fontSize: "20px" }}>
                     <em>Registration is not necessary for invited participants to the TEA workshop.</em>
                 
